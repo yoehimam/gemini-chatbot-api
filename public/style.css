@@ -39,6 +39,20 @@ body {
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
 }
 
+.header-content {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.author-name {
+  margin: 0;
+  font-size: 14px;
+  font-weight: 400;
+  opacity: 0.9;
+  letter-spacing: 0.5px;
+}
+
 h1 {
   margin: 0;
   font-size: 24px;
@@ -415,6 +429,10 @@ button[type="submit"]:disabled {
 
   h1 {
     font-size: 20px;
+  }
+
+  .author-name {
+    font-size: 12px;
   }
 
   .chat-box {
