@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Chatbot Gemini AI</title>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+  <div class="container">
+    <div class="header">
+      <h1>Chatbot Gemini AI</h1>
+      <button id="clear-btn" class="clear-btn" title="Hapus chat">🗑️</button>
+    </div>
+    <div id="chat-box" class="chat-box"></div>
+    <form id="chat-form" enctype="multipart/form-data">
+      <div class="input-container">
+        <input type="text" id="user-input" placeholder="Ketik pesan Anda..." autocomplete="off" />
+        <label for="file-input" class="file-label" title="Unggah Audio atau PDF">
+          📎
+        </label>
+        <input type="file" id="file-input" accept="audio/*,.pdf" style="display: none;" />
+        <button type="submit">Kirim</button>
+      </div>
+      <div id="file-preview" class="file-preview"></div>
+    </form>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
